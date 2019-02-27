@@ -13,9 +13,10 @@
   Give it a key of name with the value being your name, and another key of age with the value being your age. 
   Then alert your name using dot notation.
 */
+
 var me = {
   name: 'Jonathan',
-  age: 27
+  age: 27,
 }
 
 // alert(me.name)
@@ -28,32 +29,33 @@ var me = {
   Have the values to those keys be your favorite thing in that category.
 */
 
-var favoriteThings = {
-  band:'Collective soul',
-  food:'burger',
-  person:'Charity',
-  book:'idk',
-  movie:'the emperors new groove',
-  holiday:'Christmas'
-}
 
+let favoriteThings = {
+  band: 'thing',
+  food: 'burger',
+  person: 'Charity',
+  book: 'BOM',
+  movie: 'Ironman',
+  holiday: 'Christmas'
+}
 
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
-favoriteThings.car = 'My truck'
-favoriteThings.brand = 'Leatherman'
-
-
+favoriteThings.car = 'truck'; 
+favoriteThings.brand = 'leathernam';
 
 /*
-  Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
+
 
 favoriteThings.food = 'Chicken Nuggets'
 favoriteThings.book = 'Harry Potter'
+
+console.log(favoriteThings.book)
 
 
 ////////// PROBLEM 3 //////////
@@ -66,19 +68,19 @@ favoriteThings.book = 'Harry Potter'
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
 */
 
-var backPack = {}
+let backPack = {}
 
-var item = 'firstPocket'
+let item = 'firstPocket'
+
 backPack[item] = 'chapstick'
 
 
-
+console.log(backPack)
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-// alert(backPack)
 
 
 
@@ -88,7 +90,6 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-console.log(backPack)
 
 
 
@@ -102,7 +103,7 @@ var user2 = {
   email: 'ty33@gmail.com',
   birthday: '05/02/1990',
   username: 'tylermcginnis33'
-};
+ };
 // Do not edit the code above.
 
 /*
@@ -135,7 +136,7 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 */
 
 //Code Here
-
+const methodCollection = {}
 
 
 /*
@@ -144,8 +145,15 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 */
 
 //Code Here
+function alertHello() {
+  alert("hello")
+}
+function logHello() {
+  console.log("hello")
+}
 
-
+methodCollection.alertHello = alertHello
+methodCollection.logHello = logHello
 
 /*
   Now call your alertHello and logHello methods.
@@ -163,7 +171,14 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 */
 
 //Code Here
+function makePerson(name, birthday, ssn) {
+  let holder = {name: name, birthday: birthday, ssn: ssn}
+  return holder
+}
 
+
+let me2 = makePerson('Jonathan', 06111991, 132132131)
+console.log(me2)
 
 
 ////////// PROBLEM 7 //////////
@@ -175,4 +190,8 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 
 //Code Here
 
+function makeCard(num, exp, code) {
+  let holder = {cardNumber: num, expirationDate: exp, securityCode: code}
+  return holder
+}
 
